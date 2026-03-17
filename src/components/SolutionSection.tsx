@@ -4,12 +4,12 @@ import { Mic, MessageSquare, CalendarCheck, BrainCircuit, Clock, BarChart3 } fro
 const features = [
   {
     icon: Mic,
-    title: "Voice-first contactknop",
-    description: "Klanten spreken een bericht in of typen — direct op jouw website. Geen wachtrij, geen telefoonstress.",
+    title: "Voice first contactknop",
+    description: "Klanten spreken een bericht in of typen direct op jouw website. Geen wachtrij, geen telefoonstress.",
   },
   {
     icon: BrainCircuit,
-    title: "AI-helpdesk",
+    title: "AI helpdesk",
     description: "Veelgestelde vragen worden automatisch beantwoord. De AI leert van jouw FAQ's en eerdere gesprekken.",
   },
   {
@@ -20,7 +20,7 @@ const features = [
   {
     icon: MessageSquare,
     title: "Dashboard met AI-suggesties",
-    description: "Bekijk alle berichten en leads in één dashboard. AI stelt antwoorden voor — jij keurt ze goed.",
+    description: "Bekijk alle berichten en leads in één dashboard. AI stelt antwoorden voor jij keurt ze goed.",
   },
   {
     icon: Clock,
@@ -51,7 +51,7 @@ const SolutionSection = () => {
             Eén knop. <span className="text-accent">Alles geregeld.</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Bookey combineert een slimme contactwidget met een AI-aangedreven dashboard — 
+            Bookey combineert een slimme contactwidget met een AI-aangedreven dashboard 
             zodat jij je kunt focussen op je werk.
           </p>
         </motion.div>

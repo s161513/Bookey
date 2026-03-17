@@ -36,7 +36,7 @@ const ProblemSection = () => {
             Het probleem
           </span>
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground lg:text-4xl">
-            Bedrijven zijn <span className="text-warning">onbereikbaar</span> — en verliezen klanten
+            Bedrijven zijn <span className="text-warning">onbereikbaar</span> en verliezen klanten
           </h2>
           <p className="font-body text-lg text-muted-foreground">
             Bel-angst bij jongere generaties, trage reacties en gemiste oproepen na 
