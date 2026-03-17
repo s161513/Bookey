@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -7,8 +8,8 @@ const Navbar = () => {
   return (
     <nav className="sticky top-0 z-40 border-b border-border/50 bg-background/80 backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
-        <a href="/" className="font-display text-xl font-bold text-foreground">
-          Bookey
+        <a href="/" className="flex items-center gap-2">
+          <img src={logo} alt="Bookey logo" className="h-8 w-auto" />
         </a>
 
         <div className="hidden items-center gap-8 md:flex">

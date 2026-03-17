@@ -51,7 +51,7 @@ const SolutionSection = () => {
             Eén knop. <span className="text-accent">Alles geregeld.</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Bookey combineert een slimme contactwidget met een AI-aangedreven dashboard 
+            Bookey combineert een slimme contactwidget met een AI aangedreven dashboard 
             zodat jij je kunt focussen op je werk.
           </p>
         </motion.div>

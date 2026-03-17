@@ -39,7 +39,7 @@ const ProblemSection = () => {
             Bedrijven zijn <span className="text-warning">onbereikbaar</span> en verliezen klanten
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Bel-angst bij jongere generaties, trage reacties en gemiste oproepen na 
+            Bel angst bij jongere generaties, trage reacties en gemiste oproepen na 
             sluitingstijd kosten KMO's dagelijks leads en omzet.
           </p>
         </motion.div>

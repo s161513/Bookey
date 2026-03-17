@@ -1,8 +1,10 @@
+import logo from "@/assets/logo.png";
+
 const Footer = () => {
   return (
     <footer className="border-t border-border bg-secondary py-10">
       <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-6 md:flex-row">
-        <span className="font-display text-sm font-semibold text-foreground">Bookey</span>
+        <img src={logo} alt="Bookey logo" className="h-6 w-auto" />
         <p className="text-center font-body text-xs text-muted-foreground">
           © {new Date().getFullYear()} Bookey. Klantcontact radicaal eenvoudiger.
         </p>

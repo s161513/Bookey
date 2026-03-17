@@ -29,7 +29,7 @@ const HeroSection = () => {
             </h1>
 
             <p className="mb-8 max-w-lg font-body text-lg text-primary-foreground/70">
-              Bookey geeft jouw bedrijf een slimme contactknop voice-first 
+              Bookey geeft jouw bedrijf een slimme contactknop voice-first
               gekoppeld aan een AI helpdesk die FAQ's, afspraken en berichten 
               automatisch afhandelt. Ook na sluitingstijd.
             </p>
@@ -53,11 +53,11 @@ const HeroSection = () => {
             <div className="mt-10 flex items-center gap-6 text-sm text-primary-foreground/50">
               <div className="flex items-center gap-2">
                 <Mic className="h-4 w-4 text-accent" />
-                <span>Voice first</span>
+                <span>Voice-first</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-                <span>AI antwoorden</span>
+                <span>AI-antwoorden</span>
               </div>
               <div className="flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-accent" />
@@ -74,7 +74,7 @@ const HeroSection = () => {
           >
             <img
               src={heroImage}
-              alt="Bookey voice first contactwidget illustratie"
+              alt="Bookey voice-first contactwidget illustratie"
               className="w-full rounded-2xl"
             />
           </motion.div>
