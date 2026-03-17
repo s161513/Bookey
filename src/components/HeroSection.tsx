@@ -30,7 +30,7 @@ const HeroSection = () => {
 
             <p className="mb-8 max-w-lg font-body text-lg text-primary-foreground/70">
               Bookey geeft jouw bedrijf een slimme contactknop voice-first 
-              gekoppeld aan een AI-helpdesk die FAQ's, afspraken en berichten 
+              gekoppeld aan een AI helpdesk die FAQ's, afspraken en berichten 
               automatisch afhandelt. Ook na sluitingstijd.
             </p>
 
