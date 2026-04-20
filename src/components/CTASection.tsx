@@ -17,8 +17,8 @@ const CTASection = () => {
             <span className="text-accent">Start vandaag.</span>
           </h2>
           <p className="mb-8 font-body text-lg text-primary-foreground/70">
-            We zoeken 5 KMO's voor onze gratis pilot. Wees erbij en ontdek hoe 
-            Bookey jouw klantencontact transformeert.
+            We zoeken 5 KMO's voor onze gratis pilot. Start vandaag en laat 
+            Bookey je klantencontact automatiseren.
           </p>
           <a
             href="#pricing"

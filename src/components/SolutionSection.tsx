@@ -4,33 +4,39 @@ import { Mic, MessageSquare, CalendarCheck, BrainCircuit, Clock, BarChart3 } fro
 const features = [
   {
     icon: Mic,
-    title: "Voice first contactknop",
-    description: "Klanten spreken een bericht in of typen direct op jouw website. Geen wachtrij, geen telefoonstress.",
+    title: "Widget ontvangt bericht",
+    description: "Klanten bellen of spreken rechtstreeks via jouw website  geen app nodig. Direct, persoonlijk contact.",
+    order: 1,
   },
   {
     icon: BrainCircuit,
-    title: "AI helpdesk",
-    description: "Veelgestelde vragen worden automatisch beantwoord. De AI leert van jouw FAQ's en eerdere gesprekken.",
+    title: "AI beantwoordt automatisch",
+    description: "De AI leert van je FAQ's en eerdere gesprekken. Veelgestelde vragen zijn in seconden beantwoord.",
+    order: 2,
   },
   {
     icon: CalendarCheck,
-    title: "Automatische afspraken",
-    description: "Klanten plannen zelf een afspraak in via de widget. Jij krijgt het in je agenda zonder moeite.",
-  },
-  {
-    icon: MessageSquare,
-    title: "Dashboard met AI-suggesties",
-    description: "Bekijk alle berichten en leads in één dashboard. AI stelt antwoorden voor jij keurt ze goed.",
+    title: "Afspraken inplannen",
+    description: "Klanten plannen zelf in. Jij ziet het direct in je agenda  geen handwerk.",
+    order: 3,
   },
   {
     icon: Clock,
-    title: "Bereikbaar na sluitingstijd",
-    description: "De widget vangt berichten op wanneer jij niet beschikbaar bent. Geen enkele lead gaat verloren.",
+    title: "24/7 bereikbaar",
+    description: "De widget werkt even hard wanneer jij niet beschikbaar bent. Geen lead gaat verloren.",
+    order: 4,
+  },
+  {
+    icon: MessageSquare,
+    title: "Centraal dashboard",
+    description: "Alle berichten, leads en inzichten op één plek. AI stelt antwoorden voor  jij keurt ze goed.",
+    order: 5,
   },
   {
     icon: BarChart3,
     title: "Analytics & inzichten",
-    description: "Zie hoeveel leads je opvangt, welke vragen vaak terugkomen en hoe snel je reageert.",
+    description: "Zie welke vragen het vaakst voorkomen, hoe snel je reageert en hoeveel leads je opvangt.",
+    order: 6,
   },
 ];
 
@@ -45,14 +51,14 @@ const SolutionSection = () => {
           className="mx-auto mb-16 max-w-2xl text-center"
         >
           <span className="mb-3 inline-block font-display text-sm font-semibold uppercase tracking-wider text-accent">
-            De oplossing
+            Hoe het werkt
           </span>
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground lg:text-4xl">
-            Eén knop. <span className="text-accent">Alles geregeld.</span>
+            Bookey handelt alles <span className="text-accent">automatisch</span> af
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Bookey combineert een slimme contactwidget met een AI aangedreven dashboard 
-            zodat jij je kunt focussen op je werk.
+            De Bookey widget vangt vragen op, de AI antwoordt slim, en alles 
+            wordt centraal beheerd in jouw dashboard.
           </p>
         </motion.div>
 
@@ -64,8 +70,12 @@ const SolutionSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              className="group rounded-2xl border border-border bg-card p-6 shadow-card transition-all hover:-translate-y-1 hover:shadow-lg"
+              className="group relative rounded-2xl border border-border bg-card p-6 shadow-card transition-all hover:-translate-y-1 hover:shadow-lg"
             >
+              {/* Order badge */}
+              <div className="absolute -top-3 -right-3 flex h-8 w-8 items-center justify-center rounded-full bg-accent text-accent-foreground font-display text-xs font-bold">
+                {feature.order}
+              </div>
               <div className="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-xl bg-accent/10 text-accent transition-colors group-hover:bg-accent group-hover:text-accent-foreground">
                 <feature.icon className="h-6 w-6" />
               </div>

@@ -9,7 +9,7 @@ const plans = [
     description: "Perfect voor kleine zelfstandigen",
     users: "1 gebruiker",
     features: [
-      "Voice & tekst contactknop",
+      "Voice & tekst widget",
       "Basis AI-antwoorden",
       "Inbox dashboard",
       "E-mail notificaties",

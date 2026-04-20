@@ -36,31 +36,35 @@ const ProblemSection = () => {
             Het probleem
           </span>
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground lg:text-4xl">
-            Bedrijven zijn <span className="text-warning">onbereikbaar</span> en verliezen klanten
+            Bedrijven zijn <span className="text-warning">onbereikbaar</span>  en verliezen klanten
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Bel angst bij jongere generaties, trage reacties en gemiste oproepen na 
+            Bel-angst bij jongere generaties, trage reacties en gemiste oproepen na 
             sluitingstijd kosten KMO's dagelijks leads en omzet.
           </p>
         </motion.div>
 
         <div className="grid gap-8 md:grid-cols-3">
-          {stats.map((stat, i) => (
-            <motion.div
-              key={stat.value}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
-              className="rounded-2xl border border-border bg-card p-8 shadow-card transition-shadow hover:shadow-lg"
-            >
-              <stat.icon className={`mb-4 h-8 w-8 ${stat.color}`} />
-              <div className={`mb-2 font-display text-4xl font-bold ${stat.color}`}>
-                {stat.value}
-              </div>
-              <p className="font-body text-muted-foreground">{stat.label}</p>
-            </motion.div>
-          ))}
+          {stats.map((stat, i) => {
+            // Fix: React componenten moeten met een hoofdletter beginnen
+            const Icon = stat.icon;
+            return (
+              <motion.div
+                key={stat.value}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="rounded-2xl border border-border bg-card p-8 shadow-card transition-shadow hover:shadow-lg"
+              >
+                <Icon className={`mb-4 h-8 w-8 ${stat.color}`} />
+                <div className={`mb-2 font-display text-4xl font-bold ${stat.color}`}>
+                  {stat.value}
+                </div>
+                <p className="font-body text-muted-foreground">{stat.label}</p>
+              </motion.div>
+            );
+          })}
         </div>
       </div>
     </section>

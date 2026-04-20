@@ -126,23 +126,28 @@ const ContactWidget = () => {
         )}
       </AnimatePresence>
 
-      {/* FAB */}
+      {/* FAB Trigger Button - Duidelijk zichtbaar met 3-laags pulse effect */}
       <motion.button
-        whileHover={{ scale: 1.05 }}
+        whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.95 }}
         onClick={() => setIsOpen(!isOpen)}
-        className="relative flex h-14 w-14 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-widget"
+        className="relative flex h-16 w-16 items-center justify-center rounded-full bg-accent text-accent-foreground shadow-lg"
       >
+        {/* Triple pulse rings voor duidelijke trigger */}
         {!isOpen && (
-          <span className="absolute inset-0 animate-pulse-ring rounded-full bg-accent/40" />
+          <>
+            <div className="absolute inset-0 animate-[pulse_3s_cubic-bezier(0.4,0,0.6,1)_infinite] rounded-full border-2 border-accent/40" />
+            <div className="absolute inset-0 animate-[pulse_3s_cubic-bezier(0.4,0,0.6,1)_infinite_0.5s] rounded-full border-2 border-accent/20" />
+            <div className="absolute inset-0 animate-[pulse_3s_cubic-bezier(0.4,0,0.6,1)_infinite_1s] rounded-full border-2 border-accent/10" />
+          </>
         )}
         <AnimatePresence mode="wait">
           {isOpen ? (
-            <motion.div key="close" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }}>
+            <motion.div key="close" initial={{ rotate: -90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: 90, opacity: 0 }} className="relative z-10">
               <X className="h-6 w-6" />
             </motion.div>
           ) : (
-            <motion.div key="mic" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }}>
+            <motion.div key="mic" initial={{ rotate: 90, opacity: 0 }} animate={{ rotate: 0, opacity: 1 }} exit={{ rotate: -90, opacity: 0 }} className="relative z-10 flex flex-col items-center">
               <Mic className="h-6 w-6" />
             </motion.div>
           )}
