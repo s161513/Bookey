@@ -1,10 +1,11 @@
 import { motion } from "framer-motion";
-import { Check } from "lucide-react";
+import { Check, Gift } from "lucide-react";
 
 const plans = [
   {
     name: "Starter",
     price: "€19",
+    pilotPrice: "€9,50",
     period: "/maand",
     description: "Perfect voor kleine zelfstandigen",
     users: "1 gebruiker",
@@ -20,11 +21,12 @@ const plans = [
   {
     name: "Business",
     price: "€49",
+    pilotPrice: "€24,50",
     period: "/maand",
     description: "Voor KMO's die willen groeien",
     users: "2-5 gebruikers",
     features: [
-      "Alles van Starter",
+      "Alle Starter-functies",
       "Automatische afspraken",
       "Analytics & rapportage",
       "CRM-integratie",
@@ -43,17 +45,39 @@ const PricingSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="mx-auto mb-16 max-w-2xl text-center"
+          className="mx-auto mb-12 max-w-2xl text-center"
         >
           <span className="mb-3 inline-block font-display text-sm font-semibold uppercase tracking-wider text-accent">
-            Prijzen
+            Pilotaanbod
           </span>
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground lg:text-4xl">
-            Eenvoudige, transparante prijzen
+            Probeer Bookey 2 maanden gratis
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Geen verborgen kosten. Start vandaag met de gratis pilot.
+            We zoeken 5 KMO's die Bookey willen testen op hun website. Tijdens de pilot
+            krijgt u begeleide onboarding en kunt u zonder risico zien hoeveel leads,
+            vragen en afspraken Bookey opvangt.
           </p>
+        </motion.div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="mx-auto mb-10 flex max-w-3xl items-center justify-center rounded-2xl border border-accent/30 bg-accent/10 p-5 text-center shadow-card"
+        >
+          <div>
+            <div className="mb-2 inline-flex items-center gap-2 rounded-full bg-accent px-4 py-1 font-display text-xs font-bold uppercase tracking-wider text-accent-foreground">
+              <Gift className="h-4 w-4" />
+              Tijdelijk pilotvoordeel
+            </div>
+            <p className="font-display text-2xl font-bold text-foreground md:text-3xl">
+              Eerste 2 maanden gratis proberen
+            </p>
+            <p className="mt-2 text-sm text-muted-foreground">
+              Daarna behoudt u als pilotklant 50% korting op uw maandprijs.
+            </p>
+          </div>
         </motion.div>
 
         <div className="mx-auto grid max-w-3xl gap-8 md:grid-cols-2">
@@ -81,9 +105,20 @@ const PricingSection = () => {
                 <p className="text-sm text-muted-foreground">{plan.description}</p>
               </div>
 
-              <div className="mb-6">
-                <span className="font-display text-4xl font-bold text-foreground">{plan.price}</span>
-                <span className="text-muted-foreground">{plan.period}</span>
+              <div className="mb-6 rounded-xl bg-secondary p-4">
+                <div className="mb-1 text-sm font-medium text-muted-foreground">
+                  Na de gratis pilot
+                </div>
+                <div className="flex items-end gap-3">
+                  <span className="font-display text-2xl font-bold text-muted-foreground line-through">
+                    {plan.price}
+                  </span>
+                  <span className="font-display text-4xl font-bold text-foreground">
+                    {plan.pilotPrice}
+                  </span>
+                  <span className="pb-1 text-muted-foreground">{plan.period}</span>
+                </div>
+                <p className="mt-2 text-sm font-semibold text-accent">50% pilotkorting</p>
                 <p className="mt-1 text-sm text-muted-foreground">{plan.users}</p>
               </div>
 
@@ -103,7 +138,7 @@ const PricingSection = () => {
                     : "border border-border bg-secondary text-secondary-foreground hover:bg-muted"
                 }`}
               >
-                Start gratis pilot
+                Start 2 maanden gratis
               </button>
             </motion.div>
           ))}

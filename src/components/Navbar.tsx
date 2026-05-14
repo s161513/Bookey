@@ -23,7 +23,7 @@ const Navbar = () => {
             href="#pricing"
             className="rounded-lg bg-accent px-5 py-2 font-display text-sm font-semibold text-accent-foreground transition-transform hover:scale-105"
           >
-            Start pilot
+            2 maanden gratis
           </a>
         </div>
 
@@ -37,7 +37,7 @@ const Navbar = () => {
           <div className="flex flex-col gap-4">
             <a href="#solution" onClick={() => setMobileOpen(false)} className="font-body text-sm text-muted-foreground">Oplossing</a>
             <a href="#pricing" onClick={() => setMobileOpen(false)} className="font-body text-sm text-muted-foreground">Prijzen</a>
-            <a href="#pricing" onClick={() => setMobileOpen(false)} className="rounded-lg bg-accent px-5 py-2 text-center font-display text-sm font-semibold text-accent-foreground">Start pilot</a>
+            <a href="#pricing" onClick={() => setMobileOpen(false)} className="rounded-lg bg-accent px-5 py-2 text-center font-display text-sm font-semibold text-accent-foreground">2 maanden gratis</a>
           </div>
         </div>
       )}

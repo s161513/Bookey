@@ -3,7 +3,7 @@ import { ArrowRight, Mic, Calendar, Zap } from "lucide-react";
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden bg-primary py-20 lg:py-28">
+    <section className="relative overflow-hidden bg-primary bg-[image:var(--gradient-hero)] py-20 lg:py-28">
       {/* Decorative blobs */}
       <div className="absolute -top-20 -right-20 h-96 w-96 rounded-full bg-accent/10 blur-3xl" />
       <div className="absolute -bottom-20 -left-20 h-80 w-80 rounded-full bg-accent/5 blur-3xl" />
@@ -17,28 +17,28 @@ const HeroSection = () => {
             className="flex flex-col items-center"
           >
             {/* Trigger Badge */}
-            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-accent/30 bg-accent/10 px-4 py-1.5">
+            <div className="mb-8 inline-flex items-center gap-2 rounded-full border border-white/25 bg-white/12 px-4 py-1.5 shadow-sm backdrop-blur">
               <span className="relative flex h-2 w-2">
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-2 w-2 bg-accent"></span>
               </span>
-              <span className="font-body text-xs font-semibold tracking-wide uppercase text-accent">
-                Nu in pilot  5 KMO's gezocht
+              <span className="font-body text-xs font-semibold tracking-wide uppercase text-cyan-100">
+                2 maanden gratis · 5 KMO's gezocht
               </span>
             </div>
 
             {/* Headline: Verfijnd naar 3xl/4xl voor fullscreen balans */}
-            <h1 className="mb-6 max-w-3xl font-display text-3xl font-bold leading-tight text-primary-foreground md:text-4xl lg:text-5xl">
-              Stop met leads <span className="text-accent text-gradient">verliezen.</span>
+            <h1 className="mb-6 max-w-3xl font-display text-3xl font-bold leading-tight text-white drop-shadow-sm md:text-4xl lg:text-5xl">
+              Klanten willen nu contact.
               <br />
-              Laat Bookey uw business automatiseren.
+              <span className="text-cyan-100">Bookey vangt ze meteen op.</span>
             </h1>
 
             {/* Subtekst: Max-width strakker en tekst kleiner (sm/base) */}
-            <p className="mb-10 max-w-lg font-body text-sm leading-relaxed text-primary-foreground/70 md:text-base">
-              Bookey is uw AI-assistent die 24/7 bereikbaar blijft. Van voice-first 
-              interacties tot het direct inplannen van afspraken  wij vangen de leads 
-              terwijl u zich focust op de uitvoering.
+            <p className="mb-10 max-w-2xl font-body text-sm font-medium leading-relaxed text-white/90 md:text-base">
+              Bookey zet een voice- en tekstknop op uw website. Klanten stellen hun vraag,
+              krijgen direct een AI-antwoord en kunnen meteen een afspraak inplannen — ook
+              buiten de openingsuren.
             </p>
 
             {/* Action Buttons */}
@@ -47,29 +47,29 @@ const HeroSection = () => {
                 href="#pricing"
                 className="inline-flex items-center gap-2 rounded-lg bg-accent px-7 py-3.5 font-display text-sm font-semibold text-accent-foreground transition-all hover:scale-105 hover:shadow-lg"
               >
-                Start gratis pilot
+                Start 2 maanden gratis
                 <ArrowRight className="h-4 w-4" />
               </a>
               <a
                 href="#solution"
-                className="inline-flex items-center gap-2 rounded-lg border border-primary-foreground/20 px-7 py-3.5 font-display text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+                className="inline-flex items-center gap-2 rounded-lg border border-white/30 px-7 py-3.5 font-display text-sm font-semibold text-white transition-colors hover:bg-white/10"
               >
                 Bekijk de oplossing
               </a>
             </div>
 
             {/* Minimal Features List */}
-            <div className="mt-16 flex flex-wrap justify-center gap-8 text-[12px] font-medium uppercase tracking-wider text-primary-foreground/40">
+            <div className="mt-16 flex flex-wrap justify-center gap-8 text-[12px] font-semibold uppercase tracking-wider text-white/70">
               <div className="flex items-center gap-2">
-                <Mic className="h-4 w-4 text-accent/60" />
+                <Mic className="h-4 w-4 text-cyan-100" />
                 <span>Voice AI</span>
               </div>
               <div className="flex items-center gap-2">
-                <Calendar className="h-4 w-4 text-accent/60" />
+                <Calendar className="h-4 w-4 text-cyan-100" />
                 <span>Auto-Booking</span>
               </div>
               <div className="flex items-center gap-2">
-                <Zap className="h-4 w-4 text-accent/60" />
+                <Zap className="h-4 w-4 text-cyan-100" />
                 <span>24/7 Respons</span>
               </div>
             </div>

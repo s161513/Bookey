@@ -1,24 +1,24 @@
 import { motion } from "framer-motion";
-import { PhoneOff, UserX, TrendingDown } from "lucide-react";
+import { Clock, PhoneOff, TrendingDown } from "lucide-react";
 
 const stats = [
   {
     icon: PhoneOff,
     value: "85%",
-    label: "Fortune 500 bedrijven hebben géén telefoonnummer op hun homepagina",
+    label: "van Fortune 500-bedrijven toont geen telefoonnummer op de homepagina",
     color: "text-warning" as const,
   },
   {
-    icon: UserX,
-    value: "59%",
-    label: "van klanten verlaat een bedrijf na een slechte customer experience",
-    color: "text-destructive" as const,
+    icon: Clock,
+    value: "24/7",
+    label: "verwachting: klanten willen antwoord wanneer hun intentie het hoogst is",
+    color: "text-accent" as const,
   },
   {
     icon: TrendingDown,
-    value: "23%",
-    label: "heeft nergens op hun website een telefoonnummer staan",
-    color: "text-warning" as const,
+    value: "59%",
+    label: "van consumenten haakt af na een slechte klantervaring",
+    color: "text-destructive" as const,
   },
 ];
 
@@ -36,11 +36,12 @@ const ProblemSection = () => {
             Het probleem
           </span>
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground lg:text-4xl">
-            Bedrijven zijn <span className="text-warning">onbereikbaar</span>  en verliezen klanten
+            Elke gemiste vraag kan een <span className="text-warning">verloren klant</span> zijn
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            Bel-angst bij jongere generaties, trage reacties en gemiste oproepen na 
-            sluitingstijd kosten KMO's dagelijks leads en omzet.
+            Moderne klanten verwachten snelle, laagdrempelige communicatie. Als een KMO
+            niet meteen bereikbaar is op het moment dat iemand wil boeken, kopen of vragen
+            stellen, gaat die lead vaak naar een concurrent.
           </p>
         </motion.div>
 

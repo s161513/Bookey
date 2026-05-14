@@ -4,38 +4,38 @@ import { Mic, MessageSquare, CalendarCheck, BrainCircuit, Clock, BarChart3 } fro
 const features = [
   {
     icon: Mic,
-    title: "Widget ontvangt bericht",
-    description: "Klanten bellen of spreken rechtstreeks via jouw website  geen app nodig. Direct, persoonlijk contact.",
+    title: "Voice- en tekstknop",
+    description: "Klanten spreken of typen hun vraag rechtstreeks op uw website. Geen app, geen drempel, meteen contact.",
     order: 1,
   },
   {
     icon: BrainCircuit,
-    title: "AI beantwoordt automatisch",
-    description: "De AI leert van je FAQ's en eerdere gesprekken. Veelgestelde vragen zijn in seconden beantwoord.",
+    title: "AI herkent de intentie",
+    description: "Bookey begrijpt of iemand info zoekt, een afspraak wil maken of support nodig heeft, en geeft direct een passend antwoord.",
     order: 2,
   },
   {
     icon: CalendarCheck,
-    title: "Afspraken inplannen",
-    description: "Klanten plannen zelf in. Jij ziet het direct in je agenda  geen handwerk.",
+    title: "Afspraken plannen",
+    description: "Wanneer een klant klaar is om te boeken, stelt Bookey beschikbare momenten voor en zet de afspraak in uw agenda.",
     order: 3,
   },
   {
     icon: Clock,
     title: "24/7 bereikbaar",
-    description: "De widget werkt even hard wanneer jij niet beschikbaar bent. Geen lead gaat verloren.",
+    description: "Na openingsuren blijft Bookey vragen opvangen, kwalificeren en doorsturen zodat warme leads niet afkoelen.",
     order: 4,
   },
   {
     icon: MessageSquare,
     title: "Centraal dashboard",
-    description: "Alle berichten, leads en inzichten op één plek. AI stelt antwoorden voor  jij keurt ze goed.",
+    description: "Alle berichten en leads staan op één plek. De AI stelt antwoorden voor en u behoudt controle over belangrijke gesprekken.",
     order: 5,
   },
   {
     icon: BarChart3,
-    title: "Analytics & inzichten",
-    description: "Zie welke vragen het vaakst voorkomen, hoe snel je reageert en hoeveel leads je opvangt.",
+    title: "Concrete leadinzichten",
+    description: "Zie welke vragen terugkomen, hoeveel leads Bookey opvangt en waar klanten afhaken of juist willen boeken.",
     order: 6,
   },
 ];
@@ -54,11 +54,12 @@ const SolutionSection = () => {
             Hoe het werkt
           </span>
           <h2 className="mb-4 font-display text-3xl font-bold text-foreground lg:text-4xl">
-            Bookey handelt alles <span className="text-accent">automatisch</span> af
+            Zo maakt Bookey uw bedrijf <span className="text-accent">direct bereikbaar</span>
           </h2>
           <p className="font-body text-lg text-muted-foreground">
-            De Bookey widget vangt vragen op, de AI antwoordt slim, en alles 
-            wordt centraal beheerd in jouw dashboard.
+            De widget verlaagt de drempel om contact op te nemen. De AI beantwoordt
+            terugkerende vragen, kwalificeert leads, plant afspraken en bundelt de gesprekken
+            overzichtelijk in uw dashboard.
           </p>
         </motion.div>
 
